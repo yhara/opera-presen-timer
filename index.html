@@ -7,7 +7,7 @@
   </head>
   <body>
     <span id="hour">00</span>:<span id="minute">00</span>
-    (<span id="left">0</span>
+    (<span id="passed">0</span>
     /
     <input type="text" size="3" id="limit" value="0">
     min)
@@ -32,7 +32,7 @@ $(function(){
     // timer
     var passed = now.getTime() - start_time.getTime();
     var passed_min = Math.floor(passed / 1000 / 60);
-    $("#left").html(limit - passed_min);
+    $("#passed").html(passed_min);
   };
 
   $("#limit").change(function(){
