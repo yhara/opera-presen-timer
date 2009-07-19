@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <widgetname>Presentation Timer</widgetname>
+  <description>Shows a clock and minutes past.</description>
+  <width>180</width>
+  <height>32</height>
+  <author>
+    <name>Yutaka HARA</name>
+    <email>yutaka hara at gmail com</email>
+    <link>http://route477.net/</link>
+    <organization>Route477</organization>
+  </author>
+  <id>
+    <host>example.com</host>
+    <name>PresenTimer</name>
+    <revised>2009-07-16</revised>
+  </id>
+</widget>

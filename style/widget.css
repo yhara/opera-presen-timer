@@ -1,0 +1,14 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  border: 1px dotted black;
+  margin: 1px;
+  padding: 5px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background: white;
+}
+#limit{
+}

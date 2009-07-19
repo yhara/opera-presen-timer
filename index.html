@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="style/widget.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </head>
+  <body>
+    <span id="hour">00</span>:<span id="minute">00</span>
+    (<span id="left">0</span>
+    /
+    <input type="text" size="3" id="limit" value="0">
+    min)
+  </body>
+</html>
+<script type="text/javascript">
+$(function(){
+  var start_time = null;
+  var limit = 0;
+
+  var reset_time = function(){
+    start_time = new Date();
+  };
+  var twoize = function(n){
+    return (n < 10) ? "0"+n : String(n);
+  };
+  var update = function(){
+    var now = new Date();
+    // clock
+    $("#hour").html(twoize(now.getHours()));
+    $("#minute").html(twoize(now.getMinutes()));
+    // timer
+    var passed = now.getTime() - start_time.getTime();
+    var passed_min = Math.floor(passed / 1000 / 60);
+    $("#left").html(limit - passed_min);
+  };
+
+  $("#limit").change(function(){
+    reset_time();
+    limit = Number($("#limit").val());
+    update();
+  });
+
+  reset_time();
+  setInterval(update, 1000);
+});
+</script>
