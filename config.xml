@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <widget>
-  <widgetname>Presentation Timer</widgetname>
-  <description>Shows a clock and minutes past.</description>
+  <widgetname>PresenTimer</widgetname>
+  <description>Timer for presentation. Shows current and passed time.</description>
   <width>180</width>
   <height>32</height>
   <author>
@@ -11,7 +11,7 @@
     <organization>Route477</organization>
   </author>
   <id>
-    <host>example.com</host>
+    <host>route477.net</host>
     <name>PresenTimer</name>
     <revised>2009-07-16</revised>
   </id>
